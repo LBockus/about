@@ -6,12 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about2</title>
     <style>
+        body {
+            margin: 0px;
+            background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(./img/background.png);
+            color: rgb(99, 99, 99);
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        #header {
+            font-size: 3.5rem;
+            padding: 0rem 1rem;
+            float: left;
+        }
+        mark {
+            color: rgb(68, 68, 68);
+            background: none;
+        }
+        #about {
+            float: left;
+            text-align: middle;
+            padding-top: 3rem;
+            font-size: 1.23rem;
+            line-height: 1.6;
+            color: rgb(99, 99, 99);
+        }
+        @media only screen and (min-width: 600px) {
+            #header {
+                width: 70%;
+            }
+            #about {
+                width: calc(30% - 3rem);
+            }
+        @media only screen and (max-width: 600px) {
+            #header {
+                width: 100%
+            }
+            #about{
+                width: 100%
+            }
+        }
+        #profiles {
+            padding: 1rem;
+            width: calc(100% - 2rem);
+            float: left;
+        }
+        .profile-design {
+            float: left;
+            padding: 0rem 1rem;
+        }
+        @media only screen and (min-width: 600px) {
+            .profile-design {
+                width: calc(18% - 0.4rem);
+            }
 
+        }
+        @media only screen and (max-width: 600px) {
+            .profile-design {
+                width: calc(100% - 0.4rem);
+            }
+        }
+        .picture {
+            padding: 0.2rem;
+            border: 2px solid darkgray;
+            width: 100%;
+        }
+        .name {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            margin-bottom: 0rem;
+        }
+        .job-title {
+            text-align: center;
+            font-weight: bolder;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            margin: 0.3rem 0rem;
+            color: rgb(68, 68, 68);
+        }
+        .email {
+            text-align: center;
+            margin: 0.3rem 0rem;
+        }
+        }        
     </style>
 </head>
 <body>
     <header>
-
+        <p id="header" class="clearfix">We do everything with our core values of <mark>honesty,</mark> hard <mark>work</mark> and <mark>trust.</mark></p>
     </header>
+    <main>
+        <div id="about" class="clearfix">
+            <p><b>We believe these characteristics</b> should influence everything we do in business and in life. We sincerely enjoy the work we do, and our clients get to reap the benefits.</p>
+        </div>
+        <div id="profiles">
+            <div class="profile-design">
+                <img src="./img/profile1.png"class="picture">
+                <p class="name">eric downs</p>
+                <p class="job-title">Creative director</p>
+                <p class="email">eric@grainandmortar.com</p>
+            </div>
+            <div class="profile-design">
+                <img src="./img/profile2.png"class="picture">
+                <p class="name">eric downs</p>
+                <p class="job-title">Creative director</p>
+                <p class="email">eric@grainandmortar.com</p>
+            </div>
+            <div class="profile-design">
+                <img src="./img/profile3.png"class="picture">
+                <p class="name">eric downs</p>
+                <p class="job-title">Creative director</p>
+                <p class="email">eric@grainandmortar.com</p>
+            </div>
+            <div class="profile-design">
+                <img src="./img/profile4.png"class="picture">
+                <p class="name">eric downs</p>
+                <p class="job-title">Creative director</p>
+                <p class="email">eric@grainandmortar.com</p>
+            </div>
+            <div class="profile-design">
+                <img src="./img/profile5.png"class="picture">
+                <p class="name">eric downs</p>
+                <p class="job-title">Creative director</p>
+                <p class="email">eric@grainandmortar.com</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
