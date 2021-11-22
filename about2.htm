@@ -19,14 +19,12 @@
         #header {
             font-size: 3.5rem;
             padding: 0rem 1rem;
-            float: left;
         }
         mark {
             color: rgb(68, 68, 68);
             background: none;
         }
         #about {
-            float: left;
             text-align: middle;
             padding-top: 3rem;
             font-size: 1.23rem;
@@ -36,16 +34,21 @@
         @media only screen and (min-width: 600px) {
             #header {
                 width: 70%;
+                float: left;
             }
             #about {
                 width: calc(30% - 3rem);
+                float: left;
             }
+        }
         @media only screen and (max-width: 600px) {
             #header {
-                width: 100%
+                width: calc(100% - 3.4rem);
+                padding: 0rem 2rem;
             }
-            #about{
-                width: 100%
+            #about {
+                width: calc(100% - 3.4rem);
+                padding: 0rem 2rem;
             }
         }
         #profiles {
@@ -65,7 +68,10 @@
         }
         @media only screen and (max-width: 600px) {
             .profile-design {
-                width: calc(100% - 0.4rem);
+                width: calc(100% - 2.4rem);
+            }
+            .picture {
+                width: 80%;
             }
         }
         .picture {
