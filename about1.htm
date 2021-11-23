@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about1</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #header {
+            font-size: 3.5rem;
+            width: 100%;
+        }
+        #content-box {
+            float: left;
+            border-bottom: 2px solid rgb(206, 206, 206);
+        }
+        #about {
+            padding-left: 0.5rem;
+        }
+        @media only screen and (min-width: 600px) {
+            #about {
+                margin-right: 10rem;
+                width: calc(50% - 10rem);
+                float: left;
+            }
+            #profile-pic {
+                width: 50%;
+                float: left;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            #about {
+                width: 100%;
+                margin-right: 0.5rem;
+            }
+            #profile-pic {
+                width: 100%;
+                margin: 0.5rem;
+            }
+        }
+        #headline {
+            font-size: 2.3rem;
+            color: gray;
+            width: 90%;
+            margin-bottom: 2rem;
+        }
+        .summary {
+            color: gray;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        #like {
+            border: 1px solid gray;
+            float: left;
+            padding: 0.2rem;
+            background-color: rgb(210, 244, 255);
+        }
+        .logo {
+            width: 1rem;
+        }
+        #like > a {
+            text-decoration: none;
+            color: blue;
+        }
+        #like-count {
+            float: left;
+            border: 1px solid rgb(158, 157, 157);
+            padding: 0.25rem;
+            margin-left: 0.5rem;
+            margin-right: 2rem;
+        }
+        #follow {
+            float: left;
+            border: 1px solid darkgray;
+            padding: 0.2rem;
+        }
+        #follow > a {
+            text-decoration: none;
+            color: black;
+        }
+        #gallery {
+            width: 100%;
+            float: left;
+        }
+        .gallery-picture {
+            border: 1px solid darkgray;
+            border-radius: 0.3rem;
+            padding: 0.3rem;
+            float: left;
+            margin: 1rem 1rem;
+        }
+        .gallery-picture > img {
+            width: 100%;
+        }        
+        @media only screen and (min-width: 600px) {
+            .gallery-picture {
+                width: calc(100% / 6 - 2rem);
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .gallery-picture {
+                width: calc(50% - 2rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="content-box">
+            <div id="about">
+                <h1 id="header">about me</h1>
+                <p id="headline">
+                    I'm a UI designer and Front End Developer from Sydney. Australia.
+                </p>
+                <p class="summary">
+                    I enjoy taking complex problems and turning them into simple and beautiful interface designs. I also love the logic and structure of coding and always strive to write elegant and efficient code whether it be HTML, CSS or jQuery.
+                </p>
+                <p class="summary">
+                    When I'm not coding or pushing pixels, you'll find me in the gym or the court shooting some hoops.
+                </p>
+                <p id="like">
+                    <a href=""><img class="logo" src="./img/fblogo.png" alt="facebook logo"> Like</a>
+                </p>
+                <p id="like-count">4.4k</im></p>
+                <p id="follow">
+                    <a href=""><img class="logo" src="./img/twitterlogo.png" alt="twitter logo"><b>Follow @AdhamDumnaway</b></a>
+                </p>
+            </div>
+            <div>
+                <img id="profile-pic" src="./img/about1-main.png" alt="Profile picture">
+            </div>
+        </div>
+        <div id="gallery">
+            <div class="gallery-picture">
+                <img src="./img/about1-1.png">
+            </div>
+            <div class="gallery-picture">
+                <img src="./img/about1-2.png">
+            </div>
+            <div class="gallery-picture">
+                <img src="./img/about1-3.png">
+            </div>
+            <div class="gallery-picture">
+                <img src="./img/about1-4.png">
+            </div>
+            <div class="gallery-picture">
+                <img src="./img/about1-5.png">
+            </div>
+            <div class="gallery-picture">
+                <img src="./img/about1-6.png">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
